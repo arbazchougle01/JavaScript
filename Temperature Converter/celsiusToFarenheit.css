@@ -1,0 +1,52 @@
+body {
+  background-color: #E8E8E8;
+}
+
+#converter-box {
+  border: 4px dashed black;
+  padding: 20px;
+  margin-left: 35%;
+  margin-top: 200px;
+  height: 300px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0px 50px 0px 50px;
+  background-color: #E2EAF4;
+}
+#converter-box > h1 {
+  font-size: 40px;
+}
+#converter-box > p {
+  font-size: 34px;
+  margin: 10px;
+}
+#converter-box > input {
+  height: 45px;
+  width: 300px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#convertbtn {
+  height: 45px;
+  border-radius: 8px;
+  width: 180px;
+  font-size: 20px;
+  border: 2px solid blue;
+  color: white;
+  background-color: blue;
+}
+#result {
+  border: 2px solid black;
+  width: 200px;
+  color: rgba(0, 0, 0, 0.851);
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}

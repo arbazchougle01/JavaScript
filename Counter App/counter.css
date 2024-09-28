@@ -1,0 +1,95 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.counter h1{
+  font-size: xxx-large;
+  margin: 0px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  height: 400px;
+  width: 700px;
+  background-color: white;
+  border: 4px solid rgb(6, 233, 29);
+  background-color: greenyellow;
+}
+
+.operation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.counter .operation p {
+  font-size: 24px;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#incrementbutton {
+  border: 2px solid blue;
+  color: black;
+  background-color: yellow;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+#decrementbutton {
+  border: 2px solid blue;
+  color: black;
+  background-color: rgb(249, 249, 5);
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+#decrementbutton:hover {
+  background-color: yellowgreen;
+}
+#incrementbutton:hover {
+  background-color: yellowgreen;
+}
+#resetbutton:hover {
+  background-color: rgb(20, 80, 231);
+  color: white;
+}
+
+#resetbutton {
+  border: 2px solid blue;
+  color: white;
+  border-radius: 10px;
+  width: 700px;
+  background-color: blue;
+  font-size: 24px;
+  padding: 15px;
+  cursor: pointer;
+}
+input {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border: 2px solid black;
+  text-align: center;
+}
