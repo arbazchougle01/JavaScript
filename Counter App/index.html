@@ -14,15 +14,17 @@
 
       <!---------------------------------Operation div starts here --------------------------------------------->
       <div class="operation">
-        <p>Click here to Decrease</p>
-        <button onclick="decrement()" id="decrement-button">-</button>
+        <div class="button-instructors">
+          <p>Click on the below button to Decrease</p>
+          <button onclick="decrement()" id="decrement-button">-</button>
+        </div>
+        <input onclick="input()" id="input1" placeholder="Enter Input" />
 
-        <input onclick="input()" id="input1" placeholder="Enter Input"/>
+        <div class="button-instructors">
+          <p>Click on the below button to Increase</p>
 
-        <p>Click here to Increase</p>
-
-        <button onclick="increment()" id="increment-button"> + </button>
-
+          <button onclick="increment()" id="increment-button">+</button>
+        </div>
       </div>
       <!---------------------------------Operation div ends here --------------------------------------------->
 

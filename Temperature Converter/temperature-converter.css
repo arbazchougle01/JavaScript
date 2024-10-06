@@ -1,13 +1,14 @@
-
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #e8e8e8;
   font-family: "Lato", sans-serif;
   color: white;
-  font-family: "Lato", sans-serif; 
+  font-family: "Lato", sans-serif;
 }
 /* <!--------------------------------- Converter box starts here -------------------------------------------->  */
-
 
 #converter-box {
   box-shadow: 0px 0px 10px 0px black;
@@ -26,6 +27,7 @@ body {
 .result-reset {
   margin-left: 50px;
   margin-top: 7px;
+  gap: 11px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,20 +35,20 @@ body {
 #converter-box > h1 {
   font-size: 50px;
   text-align: center;
-  margin: 0px 0px 30px 0px;
+  padding: 0px 0px 30px 0px;
 }
 
 .value-insertion {
   display: flex;
   flex-direction: column;
-  height: 180px;
+  height: 230px;
   width: 310px;
   align-items: center;
 }
 
 #converter-box > .operations > .value-insertion > p {
-  font-size: 34px;
-  margin: 10px;
+  font-size: 27px;
+  padding: 10px;
 }
 #converter-box > .operations > .value-insertion > input {
   height: 45px;
@@ -63,14 +65,22 @@ body {
   display: flex;
   height: 230px;
 }
-#convert-btn:hover{
+/*---------------------------------------------- pseudo classes---------------------------------------------  */
+#convert-btn:hover {
   box-shadow: 0px 0px 10px 0px blue;
 }
-
-#reset:hover{
-  box-shadow: 0px 0px 10px 0px red;
-
+#convert-btn:active {
+  box-shadow: 0px 0px 10px 0px black;
 }
+
+#reset:hover {
+  box-shadow: 0px 0px 10px 0px red;
+}
+#reset:active {
+  box-shadow: 0px 0px 10px 0px black;
+}
+/*---------------------------------------------- pseudo classes---------------------------------------------  */
+
 #convert-btn {
   height: 45px;
   border-radius: 8px;
@@ -82,12 +92,12 @@ body {
 }
 #result {
   border: 2px solid;
-  width: 253px;
+  width: 240px;
   display: flex;
   color: rgba(0, 0, 0, 0.851);
-  height: 49px;
+  height: 44px;
   text-align: center;
-  margin: 3px 0px 0px;
+  padding: 3px 0px 0px;
   font-size: 25px;
   justify-content: center;
   align-items: center;
@@ -96,21 +106,20 @@ body {
 #reset {
   height: 45px;
   border-radius: 8px;
-  width: 220px;
+  width: 160px;
   height: 48px;
-  margin-top: 10px;
-  font-size: 29px;
-  border: 2px solid red;
+  font-size: 25px;
+  border: 2px solid rgba(255, 0, 0, 0);
   color: white;
-  background-color: #E10304;
+  background-color: #e10304;
 }
 
-#result-text{
-  font-size: 20px;
-  margin: 6px;
+#result-text {
+  font-size: 24px;
+  margin: 0px ;
+  padding-bottom: 8px;
+  padding-top: 10px;
 }
-  /* <!--------------------------------- Operations ends here -------------------------------------------->  */
-
-
+/* <!--------------------------------- Operations ends here -------------------------------------------->  */
 
 /* <!--------------------------------- Converter box ends here -------------------------------------------->  */

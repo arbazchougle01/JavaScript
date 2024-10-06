@@ -19,17 +19,17 @@ body {
 }
 
 .counter {
-  box-shadow: 0px 0px 10px 0px grey;
+  box-shadow: 0px 0px 15px 0px grey;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  padding: 10px 30px;
+  padding: 20px 30px;
   height: 330px;
   width: 700px;
-  border: 4px solid rgb(82, 230, 97);
-  background-color: rgb(172, 227, 91);
+  border: 4px solid rgba(82, 230, 97, 0);
+  background-color: rgb(91, 227, 116);
 }
 /* <!---------------------------------Operations starts here ---------------------------------------------> */
 
@@ -48,7 +48,7 @@ body {
 }
 
 #increment-button {
-  border: 2px solid rgb(6, 233, 29);
+  border: 2px solid rgba(6, 233, 29, 0);
   color: black;
   background-color: yellow;
   font-size: 24px;
@@ -58,8 +58,14 @@ body {
   width: 60px;
   cursor: pointer;
 }
+.button-instructors{
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items: center;
+}
 #decrement-button {
-  border: 2px solid rgb(6, 233, 29);
+  border: 2px solid rgba(6, 233, 29, 0);
   color: black;
   background-color: rgb(249, 249, 5);
   font-size: 24px;
@@ -75,16 +81,28 @@ body {
   background-color: yellow;
   box-shadow: 0px 0px 10px 0px yellow;
 }
+#decrement-button:active{
+  background-color: yellow;
+  box-shadow: 0px 0px 10px 0px black;
+}
 
 #increment-button:hover {
   background-color: yellow;
   box-shadow: 0px 0px 10px 0px yellow;
-
+}
+#increment-button:active{
+  background-color: yellow;
+  box-shadow: 0px 0px 10px 0px black;
 }
 #reset-button:hover {
   background-color: rgb(41, 11, 237);
   color: white;
   box-shadow: 0px 0px 10px 0px blue;
+}
+#reset-button:active {
+  background-color: rgb(41, 11, 237);
+  color: white;
+  box-shadow: 0px 0px 10px 0px black;
 }
 
 /* PSEUDO CLASSES */
@@ -102,7 +120,7 @@ body {
 }
 #input1 {
   width: 150px;
-  height: 50px;
+  height: 60px;
   font-size: 20px;
   border: 2px solid black;
   text-align: center;
