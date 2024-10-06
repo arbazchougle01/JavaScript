@@ -1,3 +1,5 @@
+var blank="Click the button to display a quote";
+
 const quotes = [
   "The only way to do great work is to love what you do. – Steve Jobs",
   "Life is what happens when you're busy making other plans. – John Lennon",
@@ -17,4 +19,14 @@ function getRandomQuote() {
   console.log(randomQuote);
   let quoteDisplay = document.getElementById("displayQuote");
   quoteDisplay.innerHTML = randomQuote;
+  document.getElementById("displayQuote").style.color = "black";
+
+}
+function resetQuote(){
+  let quoteDisplay = document.getElementById("displayQuote");
+  quoteDisplay.innerHTML = blank;
+  console.log("its working")
+  document.getElementById("displayQuote").style.color = "gray";
+
+
 }

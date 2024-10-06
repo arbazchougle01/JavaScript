@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TemperatureConverter</title>
+    <link rel="stylesheet" href="celsiusToFarenheit.css" />
+    <link rel="stylesheet" href="link rel="stylesheet href=" link rel= "preconnect href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <body>
+  <!--------------------------------- Converter box starts here --------------------------------------------> 
+
+    <section id="converter-box">
+     <h1>Celsius To Farenheit Converter</h1>
+       <!--------------------------------- Operations starts here --------------------------------------------> 
+
+      <div class="operations">
+      <div class="value-insertion">
+      <p class="celsius-value">Enter celsius value</p>
+      <input placeholder="Enter celsius value" type="number" id="celsius" />
+      <button id="convert-btn" onclick="handleSubmit()">Click to Convert</button>
+      </div>
+      <div class="result-reset">
+       <b><p id="result-text">The Converted Value is displayed Below</p></b>
+        <p id="result"></p>
+        <button onclick="reset()" id="reset">Reset</button>
+      </div>
+      </div>
+             <!--------------------------------- Operations ends here --------------------------------------------> 
+
+    </section>
+      <!--------------------------------- Converter box ends here --------------------------------------------> 
+
+    <script src="celsiusToFarenheit.js"></script>
+  </body>
+</html>

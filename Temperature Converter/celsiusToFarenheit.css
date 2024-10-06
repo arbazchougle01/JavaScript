@@ -1,37 +1,77 @@
+
+
 body {
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-family: "Lato", sans-serif; 
 }
+/* <!--------------------------------- Converter box starts here -------------------------------------------->  */
+
 
 #converter-box {
-  border: 4px dashed black;
+  box-shadow: 0px 0px 10px 0px black;
+  border: 2px solid gray;
   padding: 20px;
-  margin-left: 35%;
-  margin-top: 200px;
-  height: 300px;
+  margin-left: 30%;
+  margin-top: 150px;
+  height: 400px;
   width: 600px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  border-radius: 0px 50px 0px 50px;
-  background-color: #E2EAF4;
+  background-color: #5468e4;
+}
+
+.result-reset {
+  margin-left: 50px;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #converter-box > h1 {
-  font-size: 40px;
+  font-size: 50px;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
 }
-#converter-box > p {
+
+.value-insertion {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  width: 310px;
+  align-items: center;
+}
+
+#converter-box > .operations > .value-insertion > p {
   font-size: 34px;
   margin: 10px;
 }
-#converter-box > input {
+#converter-box > .operations > .value-insertion > input {
   height: 45px;
+  border: 2px solid black;
   width: 300px;
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   text-align: center;
 }
+/* <!--------------------------------- Operations starts here -------------------------------------------->  */
 
-#convertbtn {
+.operations {
+  display: flex;
+  height: 230px;
+}
+#convert-btn:hover{
+  box-shadow: 0px 0px 10px 0px blue;
+}
+
+#reset:hover{
+  box-shadow: 0px 0px 10px 0px red;
+
+}
+#convert-btn {
   height: 45px;
   border-radius: 8px;
   width: 180px;
@@ -41,12 +81,36 @@ body {
   background-color: blue;
 }
 #result {
-  border: 2px solid black;
-  width: 200px;
+  border: 2px solid;
+  width: 253px;
+  display: flex;
   color: rgba(0, 0, 0, 0.851);
-  height: 50px;
+  height: 49px;
   text-align: center;
+  margin: 3px 0px 0px;
+  font-size: 25px;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
 }
+#reset {
+  height: 45px;
+  border-radius: 8px;
+  width: 220px;
+  height: 48px;
+  margin-top: 10px;
+  font-size: 29px;
+  border: 2px solid red;
+  color: white;
+  background-color: #E10304;
+}
+
+#result-text{
+  font-size: 20px;
+  margin: 6px;
+}
+  /* <!--------------------------------- Operations ends here -------------------------------------------->  */
+
+
+
+/* <!--------------------------------- Converter box ends here -------------------------------------------->  */

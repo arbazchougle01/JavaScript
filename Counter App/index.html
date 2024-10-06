@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Application</title>
+    <link rel="stylesheet" href="counter.css" />
+  </head>
+  <body>
+    <!--------------------------------- Counter section starts here --------------------------------------------->
+
+    <section class="counter">
+      <h1>Counter Application</h1>
+
+      <!---------------------------------Operation div starts here --------------------------------------------->
+      <div class="operation">
+        <p>Click here to Decrease</p>
+        <button onclick="decrement()" id="decrement-button">-</button>
+
+        <input onclick="input()" id="input1" placeholder="Enter Input"/>
+
+        <p>Click here to Increase</p>
+
+        <button onclick="increment()" id="increment-button"> + </button>
+
+      </div>
+      <!---------------------------------Operation div ends here --------------------------------------------->
+
+      <button onclick="reset()" id="reset-button">Reset</button>
+    </section>
+
+    <!--------------------------------- counter section ends here --------------------------------------------->
+
+    <script src="counter.js"></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-html {
+* {
   margin: 0;
   padding: 0;
 }
@@ -8,26 +8,30 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
+  font-family: "Lato", sans-serif;
   overflow: hidden;
 }
-.counter h1{
+/* <!---------------------------------Counter starts here ---------------------------------------------> */
+
+.counter > h1{
   font-size: xxx-large;
   margin: 0px;
 }
 
 .counter {
+  box-shadow: 0px 0px 10px 0px grey;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
-  height: 400px;
+  padding: 10px 30px;
+  height: 330px;
   width: 700px;
-  background-color: white;
-  border: 4px solid rgb(6, 233, 29);
-  background-color: greenyellow;
+  border: 4px solid rgb(82, 230, 97);
+  background-color: rgb(172, 227, 91);
 }
+/* <!---------------------------------Operations starts here ---------------------------------------------> */
 
 .operation {
   display: flex;
@@ -37,14 +41,14 @@ body {
   gap: 20px;
 }
 
-.counter .operation p {
+.counter > .operation p {
   font-size: 24px;
   padding: 15px;
   font-weight: 600;
 }
 
-#incrementbutton {
-  border: 2px solid blue;
+#increment-button {
+  border: 2px solid rgb(6, 233, 29);
   color: black;
   background-color: yellow;
   font-size: 24px;
@@ -54,8 +58,8 @@ body {
   width: 60px;
   cursor: pointer;
 }
-#decrementbutton {
-  border: 2px solid blue;
+#decrement-button {
+  border: 2px solid rgb(6, 233, 29);
   color: black;
   background-color: rgb(249, 249, 5);
   font-size: 24px;
@@ -65,18 +69,28 @@ body {
   width: 60px;
   cursor: pointer;
 }
-#decrementbutton:hover {
-  background-color: yellowgreen;
-}
-#incrementbutton:hover {
-  background-color: yellowgreen;
-}
-#resetbutton:hover {
-  background-color: rgb(20, 80, 231);
-  color: white;
+
+/* PSEUDO CLASSES */
+#decrement-button:hover {
+  background-color: yellow;
+  box-shadow: 0px 0px 10px 0px yellow;
 }
 
-#resetbutton {
+#increment-button:hover {
+  background-color: yellow;
+  box-shadow: 0px 0px 10px 0px yellow;
+
+}
+#reset-button:hover {
+  background-color: rgb(41, 11, 237);
+  color: white;
+  box-shadow: 0px 0px 10px 0px blue;
+}
+
+/* PSEUDO CLASSES */
+
+
+#reset-button {
   border: 2px solid blue;
   color: white;
   border-radius: 10px;
@@ -86,10 +100,16 @@ body {
   padding: 15px;
   cursor: pointer;
 }
-input {
+#input1 {
   width: 150px;
   height: 50px;
   font-size: 20px;
   border: 2px solid black;
   text-align: center;
 }
+/* <!---------------------------------Operations ends here ---------------------------------------------> */
+
+
+
+/* <!---------------------------------Counter ends here ---------------------------------------------> */
+
